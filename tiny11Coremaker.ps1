@@ -169,6 +169,10 @@ foreach ($packagePattern in $packagePatterns) {
     }
 }
 
+Write-Host "Enabling features for TIA Portal..."
+& 'dism'  "/image:$scratchDir" '/enable-feature' '/featurename:MSMQ-Container' '/featurename:MSMQ-Server' '/All' "/source:$($env:SystemDrive)\tiny11\sources\sxs" 
+Write-Host "Features for TIA Portal have been enabled."
+
 Write-Host "Do you want to enable .NET 3.5? (y/n)"
 $input = Read-Host
 
