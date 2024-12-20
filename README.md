@@ -1,7 +1,7 @@
 NOTE
 ====
 The changes made in this fork are:
-Add MSMQ-Container/MSMQ-Server, as they must be installed to run Siemens TIA Portal on virtual machines created with tiny11 core script.
+* Add MSMQ-Container/MSMQ-Server, as they must be installed to run Siemens TIA Portal on virtual machines created with tiny11 core script.
 
 
 # tiny11builder
